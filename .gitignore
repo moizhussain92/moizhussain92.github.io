@@ -3,3 +3,7 @@
 _site
 Gemfile.lock
 .DS_Store
+NULL
+vendor
+nohup.out
+.gitignore
