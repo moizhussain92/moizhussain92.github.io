@@ -1,0 +1,30 @@
+- class : PowerShell
+  image : /img/portfolio/work1.jpg
+  Name : Remote Admins
+  href: http://www.cricinfo.com
+  Desc : 
+- class : Linux
+  image : /img/portfolio/linux.jpg
+  Name : Linux Project
+  href: http://www.gsmarena.com
+  Desc : 
+- class : Networking Linux
+  image : /img/portfolio/work1.jpg
+  Name : Networking and Linux project
+  href: http://www.cricinfo.com
+  Desc : 
+- class : Python Linux
+  image : /img/portfolio/work1.jpg
+  Name : Python & Linux Project
+  href: http://www.cricinfo.com
+  Desc : 
+- class : Networking
+  image : /img/portfolio/work1.jpg
+  Name : Pure Networking
+  href: http://www.cricinfo.com
+  Desc : 
+- class : Python Networking
+  image : /img/portfolio/work1.jpg
+  Name : Python & Networking Project
+  href: http://www.cricinfo.com
+  Desc : 

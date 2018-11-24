@@ -7,3 +7,4 @@ NULL
 vendor
 nohup.out
 .gitignore
+.vs

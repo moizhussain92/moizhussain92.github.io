@@ -1,119 +1,60 @@
 ---
 layout: page
-title: Our Work
+title: Work
 permalink: /work/
 ---
 
-    <!-- Slider Start -->
+<!-- Slider Start -->
 <section id="global-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="block">
-                    <h1>Just some of our latest projects.</h1>
-                    <p>Don’t just take our word for it. Check out some of our latest work.</p>
-                </div>
-            </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>Just some of our latest projects.</h1>
+          <p>Don’t just take our word for it. Check out some of our latest work.</p>
         </div>
+      </div>
     </div>
+  </div>
 </section>
-    <!-- Portfolio Start -->
+<!-- Portfolio Start -->
 <section id="portfolio-work">
-    <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="block">
-              <div class="portfolio-menu">
-                <ul>
-                    <li class="filter" data-filter="all">Everything</li>
-                    <li class="filter" data-filter=".PowerShell">PowerShell</li>
-                    <li class="filter" data-filter=".Python">Python</li>
-                    <li class="filter" data-filter=".Networking">Networking</li>
-                    <li class="filter" data-filter=".Linux">Linux</li>
-                    <li class="filter" data-filter=".Video">Video</li>
-                </ul>
-              </div>
-              <div class="portfolio-contant">
-                <ul id="portfolio-contant-active">
-                    <li class="mix PowerShell">
-                      <a href="#">
-                        <img src="{{ site.baseurl }}/img/portfolio/work1.jpg" alt="">
-                        <div class="overly">
-                          <div class="position-center">
-                            <h2>Tesla Motors</h2>
-                            <p>Labore et dolore magna aliqua. Ut enim ad </p>
-
-                          </div>
-                        </div>
-                      </a>
-                  </li>
-                  <li class="mix Python">
-                    <a href="#">
-                      <img src="{{ site.baseurl }}/img/portfolio/work2.jpg" alt="">
-                      <div class="overly">
-                        <div class="position-center">
-                          <h2>Tesla Motors</h2>
-                          <p>Labore et dolore magna aliqua. Ut enim ad </p>
-
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="mix Networking">
-                    <a href="#">
-                      <img src="{{ site.baseurl }}/img/portfolio/networking.jpg" alt="">
-                      <div class="overly">
-                        <div class="position-center">
-                          <h2>Tesla Motors</h2>
-                          <p>Labore et dolore magna aliqua. Ut enim ad </p>
-
-                        </div>
-                      </div>
-
-                    </a>
-                  </li>
-                  <li class="mix Linux">
-                    <a href="#">
-                      <img src="{{ site.baseurl }}/img/portfolio/linux.jpg" alt="">
-                      <div class="overly">
-                        <div class="position-center">
-                          <h2>Tesla Motors</h2>
-                          <p>Labore et dolore magna aliqua. Ut enim ad </p>
-
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="mix Video">
-                    <a href="#">
-                      <img src="{{ site.baseurl }}/img/portfolio/work5.jpg" alt="">
-                      <div class="overly">
-                        <div class="position-center">
-                          <h2>Tesla Motors</h2>
-                          <p>Labore et dolore magna aliqua. Ut enim ad </p>
-
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="mix Networking">
-                    <a href="#">
-                      <img src="{{ site.baseurl }}/img/portfolio/work6.jpg" alt="">
-                      <div class="overly">
-                        <div class="position-center">
-                          <h2>Tesla Motors</h2>
-                          <p>Labore et dolore magna aliqua. Ut enim ad </p>
-
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <div class="portfolio-menu">
+            <ul>
+              <li class="filter" data-filter="all">Everything</li>
+              <li class="filter" data-filter=".PowerShell">PowerShell</li>
+              <li class="filter" data-filter=".Python">Python</li>
+              <li class="filter" data-filter=".Networking">Networking</li>
+              <li class="filter" data-filter=".Linux">Linux</li>
+            </ul>
+          </div>
+          <div class="portfolio-contant">
+            <ul id="portfolio-contant-active">
+              {% if site.data.projects.size > 0 %}
+              {% for pr in site.data.projects %}
+              <li class="mix {{ pr.class }}">
+                <a href="{{ pr.href }}">
+                  <img src="{{ site.baseurl }}{{ pr.image }}" alt="">
+                  <div class="overly">
+                    <div class="position-center">
+                      <h2>{{ pr.Name }}</h2>
+                      <p>{{ pr.Desc }}</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              {% endfor %}
+              {% endif %}
+            </ul>
           </div>
         </div>
+      </div>
     </div>
+  </div>
 </section>
 
 <!-- Clients Logo Section Start -->
