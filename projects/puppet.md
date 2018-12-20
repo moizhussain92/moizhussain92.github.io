@@ -2,9 +2,9 @@
 title: Puppet
 permalink: /work/puppet
 ---
-![puppet](project-img/puppet.png){: #project-image" .project}
+![puppet](project-img/puppet-diagram.png){: #project-image" .project}
 
-#### Design and Implementation
+#### Design and Implementation:
 Implemented a puppet master-slave scenario where multiple nodes can be configured remotely via a puppet master.
 
 1. Machine A was configured to be the puppet master

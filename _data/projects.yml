@@ -20,7 +20,7 @@ projectsInternalLink:
 - class : Linux
   image : /img/portfolio/linux.png
   Name : Puppet
-  href: /work/Puppet
+  href: /work/puppet
   Desc : Implemented a puppet master-slave...
 
 - class : Python

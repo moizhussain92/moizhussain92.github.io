@@ -20,16 +20,29 @@ Call Routing and Call Optimization techniques.
 >
 >f. Asterix PBX (ISO image installed on a computer)
 
-![voip-network](project-img/voip-network-visio1.png){: #project-image" .project}
+![voip-network](project-img/voip-network-visio2.png){: #project-image" .project}
 
 <br>
 #### Implementation:
 
 1. Designed separate data and voice networks for the traffic due to different QoS requirements
 
-2. The cisco router was configured to be the firewall with all the traffic from data and voice networks passing through it.
+2. Analog Phone 1 was made to register to the PBX and be able to call any phone on the network. Analog Phone 2 was made to register to Adtran(core) and be able to call any phone on the network.
 
-3. IP, Analog and Soft Phones were made to register to the PBX and interconnected across the network. The Adtran router was configured to perform the call routing through SIP trunk. 
+3. The IP Phone 1 was registered to the PBX whereas IP Phone 2 was registered to the Cisco CME.
+
+4. X-lite SIP was used as a softphone and registered to the PBX.
+
+5. SIP trunking was set up between Cisco CME, Adtran (Core), Adtran and PBX.
+  > A SIP trunk is a virtual circuit over the data network that connects your phone to the network. One advantage of having a SIP trunk is that you don't have to maintain two physical circuits for data and voice separately; as it used the data network.
+
+6. Below is an example of how the call from IP Phone1 to Analog Phone 2 would be routed.
+  > IP Phone1 --> PBX --> Adtran --> Cisco CME --> Adtran (Core) --> Analog Phone 2
+  >
+  > Two SIP trunks were configured from the Adtran to reach the Analog Phone 2. One was directly via Adtran (core) and the other involved an extra hop of Cisco CME. In the above example, the route via Cisco CME was preferred because its cost was set lower than the direct route from Adtran to Adtran (Core).
+
+7. Adtran was configured as network firewall with NAT for data and voice.
+
 
 <br>
 #### Research Paper

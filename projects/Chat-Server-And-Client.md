@@ -28,6 +28,6 @@ Once a client chooses to connect to another client, the communication happens on
 
 3. Authentication Check: Any client either needs to sign up or login using the already registered credentials. Upon entering wrong credentials for 3 consecutive attempts, the client is blocked and cannot connect to the server.
 
-![chat-app](project-img/chat-app.png){: #intro .project }
+![chat-app](project-img/chat-app-image.png){: #intro .project }
 
 [github-repo-chat-app]:https://github.com/moizhussain92/chat-app
