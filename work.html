@@ -10,8 +10,8 @@ permalink: /work/
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          <h1>Just some of our latest projects.</h1>
-          <p>Don’t just take our word for it. Check out some of our latest work.</p>
+          <h1>Some of my Projects</h1>
+          <!--<p>Don’t just take our word for it. Check out some of our latest work.</p>-->
         </div>
       </div>
     </div>
@@ -35,7 +35,20 @@ permalink: /work/
           <div class="portfolio-contant">
             <ul id="portfolio-contant-active">
               {% if site.data.projects.size > 0 %}
-              {% for pr in site.data.projects %}
+              {% for pr in site.data.projects.projectsInternalLink %}
+              <li class="mix {{ pr.class }}">
+                <a href="{{ site.baseurl }}{{ pr.href }}">
+                  <img src="{{ site.baseurl }}{{ pr.image }}" alt="">
+                  <div class="overly">
+                    <div class="position-center">
+                      <h2>{{ pr.Name }}</h2>
+                      <p>{{ pr.Desc }}</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              {% endfor %}
+              {% for pr in site.data.projects.projectsExternalLink %}
               <li class="mix {{ pr.class }}">
                 <a href="{{ pr.href }}">
                   <img src="{{ site.baseurl }}{{ pr.image }}" alt="">

@@ -121,10 +121,18 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 #slider .block h1 {
   font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-  font-size: 45px;
+  font-weight: 300;
+  font-size: 65px;
   line-height: 60px;
   letter-spacing: 10px;
+  padding-bottom: 5px;
+}
+#slider .block h2 {
+  font-size: 30px;
+  line-height: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  letter-spacing: 6px;
   padding-bottom: 45px;
 }
 #slider .block p {
@@ -153,7 +161,6 @@ font header .navbar-default .navbar-nav li a:hover {
   padding-left: 40px;
   width: 100%;
 }
-
 #intro .img-circle img{
   border-radius: 50%;
   box-shadow: 0px 3px 15px rgba(0,0,0,0.4);
@@ -810,4 +817,21 @@ footer .footer-manu ul li a {
 }
 footer .footer-manu ul li a:hover {
   color: #000;
+}
+
+/*--------------------------------
+/WORK/PROJECT PAGE STYLING START
+----------------------------------
+*/
+
+#intro .project img{
+  max-width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+#project-button .project .btn-view-works {
+  background: #655E7A;
+  color: #fff;
+  padding: 10px 20px;
 }

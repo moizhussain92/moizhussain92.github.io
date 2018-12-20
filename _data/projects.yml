@@ -1,30 +1,44 @@
+projectsInternalLink:
 - class : PowerShell
-  image : /img/portfolio/work1.jpg
+  image : /img/portfolio/remote-admin1.jpg
   Name : Remote Admins
-  href: http://www.cricinfo.com
-  Desc : 
+  href: /work/RemoteAdmins
+  Desc : PowerShell module to manage administrators...
+
+- class : PowerShell
+  image : /img/portfolio/powershell.png
+  Name : Script repository
+  href: /work/dailyscripts
+  Desc : day-to-day scripts that I use...
+
+- class : Python
+  image : /img/portfolio/web-access.png
+  Name : Web Access Control
+  href: /work/WebAccessControl
+  Desc : Developed a web GUI using flask...
+
 - class : Linux
-  image : /img/portfolio/linux.jpg
-  Name : Linux Project
-  href: http://www.gsmarena.com
-  Desc : 
-- class : Networking Linux
-  image : /img/portfolio/work1.jpg
-  Name : Networking and Linux project
-  href: http://www.cricinfo.com
-  Desc : 
-- class : Python Linux
-  image : /img/portfolio/work1.jpg
-  Name : Python & Linux Project
-  href: http://www.cricinfo.com
-  Desc : 
+  image : /img/portfolio/linux.png
+  Name : Puppet
+  href: /work/Puppet
+  Desc : Implemented a puppet master-slave...
+
+- class : Python
+  image : /img/portfolio/chat-app.png
+  Name : chat Application
+  href: /work/ChatServerAndClient
+  Desc : Implemented a console Chat...
+
 - class : Networking
-  image : /img/portfolio/work1.jpg
-  Name : Pure Networking
-  href: http://www.cricinfo.com
-  Desc : 
-- class : Python Networking
-  image : /img/portfolio/work1.jpg
-  Name : Python & Networking Project
-  href: http://www.cricinfo.com
-  Desc : 
+  image : /img/portfolio/voip-network-visio.png
+  Name : VoIP Network
+  href: /work/VoIP
+  Desc : Designed and Configured a VoIP network...
+
+- class : Networking
+  image : /img/portfolio/ip-routing-bgp.png
+  Name : BGP Network
+  href: /work/iprouting
+  Desc : Designed and configured a BGP Network...
+
+projectsExternalLink:
