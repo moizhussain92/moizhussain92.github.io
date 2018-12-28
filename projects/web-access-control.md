@@ -6,7 +6,7 @@ permalink: /work/WebAccessControl
 Developed a web GUI using flask in Python2.7 through which the user can manage web access for their internal network. The source code is located [here][github-repo-web-access].
 
 <br>
-#### Componets:
+#### Components:
 1. flask.py
 > Flask is a micro-framework in python that is used for developing web applications. This script leverages flask to build a GUI for the user to interact with the underlying service. Flask module is used to render the web pages and perform routing operations for the website.
 ![flask](project-img/flask.png){: #intro .project}
